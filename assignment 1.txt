@@ -1,0 +1,132 @@
+_____Question 1 :
+a = 'lax'
+print(a)
+print(type(a))
+b = [1,2,3,True,5.2,4+9j]
+print(type(b))
+c = 5.2
+print(type(c))
+d = (1,2,3,'lax')
+print(type(d))
+lax
+<class 'str'>
+<class 'list'>
+<class 'float'>
+<class 'tuple'>
+
+
+
+
+
+_____Question 4:
+l = [1,2,'lax',5.2, True,4+7j]
+for i in l:
+     print(i)
+     print(type(i))
+else:        
+    print(type(l))
+output:
+1
+<class 'int'>
+2
+<class 'int'>
+lax
+<class 'str'>
+5.2
+<class 'float'>
+True
+<class 'bool'>
+(4+7j)
+<class 'complex'>
+<class 'list'>
+​
+_____Question 5:
+def count_divisions(A, B):
+    count = 0
+    
+    while A % B == 0:
+        A /= B
+        count += 1
+    
+    return count
+
+# Example usage
+number_A = 120
+number_B = 3
+
+divisions = count_divisions(number_A, number_B)
+if divisions > 0:
+    print(f"{number_A} is divisible by {number_B} and can be divided {divisions} times.")
+else:
+    print(f"{number_A} is not divisible by {number_B}.")
+
+
+____Question 6:
+my_list = [9, 12, 7, 18, 5, 15, 22, 30, 33, 10, 21, 27, 14, 6, 4, 8, 19, 20, 25, 36, 17, 3, 28, 16, 11]
+
+# Check if each element is divisible by 3
+for element in my_list:
+    if element % 3 == 0:
+        print(f"{element} is divisible by 3.")
+    else:
+        print(f"{element} is not divisible by 3.")
+
+
+____Question 7:
+mutable and immutable are two fundamental concepts that describe whether an object's state can be changed after it is created.
+
+Immutable data types are those whose values cannot be modified once they are created. When you perform operations on an immutable object, it creates a new object rather than modifying the existing one.
+
+string cannot be inmutable:
+my_string = "Hello"
+my_string = my_string + " World"  # Creates a new string
+print(my_string)  # Output: "Hello World"
+
+
+list can be mutable:
+my_list = [1, 2, 3]
+my_list[0] = 4  # Modifies the list
+print(my_list)  # Output: [4, 2, 3]
+
+
+
+____Question 4:
+var1 = 'lax'
+var2 = '[ DS , ML , Python]'
+var3 = ['DS' , 'ML' , 'Python']
+var4 = 1
+print(type(var1))
+print(type(var2))
+print(type(var3))
+print(type(var4))
+
+output:
+<class 'str'>
+<class 'str'>
+<class 'list'>
+<class 'int'>
+
+_____Question 3:
+1. /
+x = 10
+y = 3
+result = x / y
+print(result)  # Output: 3.3333333333333335
+
+​2. %
+x = 10
+y = 3
+result = x % y
+print(result)  # Output: 1
+
+3. //
+x = 10
+y = 3
+result = x // y
+print(result)  # Output: 3
+
+4. **
+x = 2
+y = 3
+result = x ** y
+print(result)  # Output: 8
